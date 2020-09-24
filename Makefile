@@ -37,6 +37,12 @@ clean:
 	-rm -f $(O)
 	-rm -f $(T)
 
+# Rule for running the build,
+# To save the inconvenience of cd-ing to the
+# build directory just to run a test
+run:
+	./$(T)
+
 # DEBUG rule to output variables
 debugVar:
 	@echo "Headers: " $(H)
