@@ -1,0 +1,5 @@
+# Do not commit files in this directory
+*
+
+# This file is an exception
+!.gitignore
