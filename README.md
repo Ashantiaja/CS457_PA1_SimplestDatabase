@@ -6,8 +6,7 @@ well as the properties of the tables (e.g., table’s names, attributes, constra
 ### Provided Functionalities
 * Database Creation, Deletion
 * Table Creation, Deletion, Update, Query
-### Misc:
-* Written in C++
+
 ### Instructions in case the program needs to be built again
 While in the top of the directory run:
 ```
