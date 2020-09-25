@@ -4,8 +4,8 @@
 TARGET = PA1
 SRC_PATH = srcs/
 BUILD_PATH = build/
-HEADERS = database.h table.h column.h
-SRCS = database.cpp table.cpp column.cpp main.cpp
+HEADERS = database.h table.h column.h commandParser.h
+SRCS = database.cpp table.cpp column.cpp main.cpp commandParser.cpp
 OBJECTS := $(patsubst %.cpp, %.o, $(SRCS))
 
 # Generate final paths for headers, srcs, objects
