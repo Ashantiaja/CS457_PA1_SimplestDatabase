@@ -16,7 +16,8 @@ enum commands_code
  alterTable,
  addColumn,
  quitProgram,
- invalidCommand
+ invalidCommand,
+ comment
 };
 
 #include <iostream>

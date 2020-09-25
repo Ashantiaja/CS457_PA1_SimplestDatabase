@@ -17,6 +17,13 @@ void CommandParser::processString(const std::string& command) {
   ogCommand = command;
   std::string arg = ""; // Buffer for possible arguments
 
+  // Check if comment
+  if(command.find("--") == 0) {
+    code = comment;
+    commandPos = 0;
+    return;
+  }
+
   // Start processing commands
   if(command.find("CREATE DATABASE") != std::string::npos) {
     code = createDatabase;

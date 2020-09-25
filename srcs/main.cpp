@@ -11,16 +11,25 @@ int main(int argc, char *argv[]) {
 
   std::string command = "";
   CommandParser parser = CommandParser();
+  Database* activeDatabase = nullptr;
 
   while(command != ".EXIT") {
     
-    std::cout << "--";
+    std::cout << ">>";
     std::getline(std::cin,command);
 
     parser.processString(command);
-    std::cout << "Code: " << parser.getCode() << std::endl
+    /*std::cout << "Code: " << parser.getCode() << std::endl
 	      << "Command Position: " << parser.getPos() << std::endl
-	      << "Args: ";
+	      << "Args: ";*/
+
+    switch(parser.getCode()) {
+    case invalidCommand:
+      std::cout << "Invalid command." << std::endl;
+      break;
+    case comment:
+      break;
+    }
   }
 
   return 0;
